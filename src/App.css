@@ -1,0 +1,74 @@
+/* Uygulama stil ayarları */
+.app {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+/* Ürünlerin yer alacağı grid container */
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 sütun */
+  gap: 20px;
+  max-width: 1200px; /* İçeriği sınırlamak için */
+  margin: 0 auto; /* Ortalamak için */
+  padding: 20px;
+}
+
+/* Her bir ürün kartının stili */
+.product {
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+/* Sat ve Satın Al butonlarının düzeni */
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.controls button {
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.receipt {
+  text-align: left;
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.receipt h2 {
+  margin-bottom: 10px;
+  font-size: 1.5em;
+}
+
+.receipt ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.receipt li {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.1em;
+}
+
+.receipt hr {
+  margin: 10px 0;
+  border: none;
+  border-top: 1px solid #ddd;
+}
+
+.receipt h3 {
+  text-align: right;
+  color: #28a745;
+  font-size: 1.5em;
+}
